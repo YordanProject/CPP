@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int luas_kotak(int panjang, int lebar){
+    int luas = panjang * lebar;
+    return luas;
+}
+
+// Overload function
+int luas_kotak(int panjang){
+    int luas = panjang * panjang;
+    return luas;
+}
+
+double luas_kotak(double sisi){
+    double luas = sisi * sisi;
+    return luas;
+}
+
+int main(){
+    cout<<"Luas kotak 2x3: "<<luas_kotak(2,3)<<endl;
+    cout<<"Luas kotak 2x2: "<<luas_kotak(2)<<endl;
+    cout<<"Luas kotak 2x2: "<<luas_kotak(2.5)<<endl;
+    return 0;
+}
